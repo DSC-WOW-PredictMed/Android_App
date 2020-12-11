@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutUs">
+
+        <TextView
+            android:id="@+id/textViewDesc1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Predict Med is an health app that tells you whether or not, you are at risk of diseases such as various Heart diseases, Liver and Kidney diseases. Predict med uses Machine lerning models trained of data collected from various parts of worlds to predict the outcomes, the models are trained to gain 90+% accuracy.\nHere at Predict Med we believe the lesser you worry, the healthier you are, thus our primary focus is to assure you whether you have the disease or not, before you spend money on various doctors and tests. Yet our model does not provide 100% true results and all the patients are advised to consult there doctos if the app has predicted them to be at risk, no medications of any sorts should be taken without consulting doctors. \nStay healthy and stay safe!!"
+            android:textColor="#0000FF"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_horizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

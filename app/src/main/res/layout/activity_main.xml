@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:fontFamily="@font/pacifico"
+        android:gravity="bottom|center"
+        android:text="PredictMed"
+        android:textColor="#0080FF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewHeart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:contentDescription="image"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_heartbeat"
+        app:layout_constraintBottom_toBottomOf="@+id/heartDisease"
+        app:layout_constraintEnd_toEndOf="@+id/heartDisease"
+        app:layout_constraintStart_toStartOf="@+id/heartDisease"
+        app:layout_constraintTop_toTopOf="@id/heartDisease"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+
+    <Button
+        android:id="@+id/heartDisease"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/disease_option"
+        android:gravity="center|bottom"
+        android:text="Heart\n"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/kidney"
+        app:layout_constraintEnd_toStartOf="@+id/liverDisease"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageViewLiver"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:contentDescription="image"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_liver"
+        app:layout_constraintBottom_toBottomOf="@+id/liverDisease"
+        app:layout_constraintEnd_toEndOf="@+id/liverDisease"
+        app:layout_constraintStart_toStartOf="@+id/liverDisease"
+        app:layout_constraintTop_toTopOf="@id/liverDisease"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/liverDisease"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/disease_option"
+        android:gravity="center|bottom"
+        android:text="Liver\n"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/about_us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/heartDisease"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageViewMigraine"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:contentDescription="image"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/about_us"
+        app:layout_constraintBottom_toBottomOf="@+id/about_us"
+        app:layout_constraintEnd_toEndOf="@+id/about_us"
+        app:layout_constraintStart_toStartOf="@+id/about_us"
+        app:layout_constraintTop_toTopOf="@id/about_us"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/kidney"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/disease_option"
+        android:gravity="center|bottom"
+        android:text="Kidney\n"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/about_us"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartDisease" />
+
+    <ImageView
+        android:id="@+id/imageViewKidney"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:contentDescription="image"
+        android:elevation="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kidneys"
+        app:layout_constraintBottom_toBottomOf="@+id/kidney"
+        app:layout_constraintEnd_toEndOf="@+id/kidney"
+        app:layout_constraintStart_toStartOf="@+id/kidney"
+        app:layout_constraintTop_toTopOf="@id/kidney"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+    <Button
+        android:id="@+id/about_us"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/disease_option"
+        android:gravity="center|bottom"
+        android:text="About Us\n"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/kidney"
+        app:layout_constraintTop_toBottomOf="@+id/liverDisease" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Choose the disease you want to test"
+        android:textColor="#0090FF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
